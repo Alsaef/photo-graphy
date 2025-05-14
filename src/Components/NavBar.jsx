@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +22,19 @@ const NavBar = () => {
 
 
                         <nav class="hidden md:flex flex-1/3 justify-center gap-6">
-                            <Link to="/" class="hover:text-blue-600 duration-300 text-white">Home</Link>
-                            <Link to="/" class="hover:text-blue-600 duration-300 text-white">Our Services</Link>
-                            <Link to="/" class="hover:text-blue-600 duration-300 text-white">Our Portfolio</Link>
-                            <Link to="/" class="hover:text-blue-600 duration-300 text-white">About</Link>
-                            <Link to="/" class="hover:text-blue-600 duration-300 text-white">Contact</Link>
+                            <NavLink to="/"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>Home</NavLink>
+                            <NavLink to="/portfolio" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>Our Portfolio</NavLink>
+                            <NavLink to="/about-us" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>About</NavLink>
+                            <NavLink to="/contact-us" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>Contact</NavLink>
                         </nav>
 
 
@@ -56,21 +64,26 @@ const NavBar = () => {
                     <div className={`md:hidden w-full overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                         <nav className="flex flex-col items-start px-3  gap-6 py-4 bg-black text-white">
-                             <Link onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
+                            <NavLink onClick={closeMenu} to="/" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>
                                 Home
-                            </Link>
-                            <Link  onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
-                                Our Services
-                            </Link>
-                            <Link onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
+                            </NavLink>
+                            <NavLink onClick={closeMenu} to="/portfolio" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>
                                 Our Portfolio
-                            </Link>
-                            <Link  onClick={closeMenu} to="/about-us" className="hover:text-blue-600 duration-300">
+                            </NavLink>
+                            <NavLink onClick={closeMenu} to="/about-us" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>
                                 About
-                            </Link>
-                            <Link  onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
+                            </NavLink>
+                            <NavLink onClick={closeMenu} to="/contact-us" className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"
+                                }>
                                 Contact
-                            </Link>
+                            </NavLink>
                         </nav>
                     </div>
 
