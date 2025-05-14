@@ -16,7 +16,7 @@ const Project = ({ fetchVideo }) => {
 
 
             <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
-              
+
             >
                 <p className='text-center text-xl font-semibold py-3'>Latest Projects</p>
                 <p className='text-center lg:text-5xl text-2xl text-white font-semibold'>Portfolio to explore</p>
@@ -29,12 +29,12 @@ const Project = ({ fetchVideo }) => {
             </div>
 
 
-            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-once="false"
-                data-aos-easing="ease-in-out"  className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
+            <div
+                 className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
                 {videos
                     ?.filter((video) => video.category === toggle)
                     .map((video, index) => (
-                        <div
+                        <div 
                             key={index}
                             className={`mx-auto w-full aspect-video`}
                         >
