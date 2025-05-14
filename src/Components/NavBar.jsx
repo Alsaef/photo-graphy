@@ -1,15 +1,13 @@
-import { buttonVariants } from 'keep-react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-     const closeMenu = () => setIsOpen(false);
+    const closeMenu = () => setIsMenuOpen(false);
     return (
         <div>
             <header class="fixed w-full top-0 z-50 backdrop-blur-lg   uppercase">
@@ -57,8 +55,8 @@ const NavBar = () => {
 
                     <div className={`md:hidden w-full overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                         }`}>
-                        <nav className="flex flex-col  gap-6 py-4 bg-black text-white">
-                            <Link onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
+                        <nav className="flex flex-col items-start px-3  gap-6 py-4 bg-black text-white">
+                             <Link onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
                                 Home
                             </Link>
                             <Link  onClick={closeMenu} to="/" className="hover:text-blue-600 duration-300">
