@@ -29,6 +29,8 @@ const reviews = [
   },
 ];
 
+// dev
+
 const ClientReviews = () => {
   return (
     <section className="bg-black py-16 my-10 px-4 md:px-20 relative">
