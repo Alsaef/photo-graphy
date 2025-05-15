@@ -10,6 +10,14 @@ const services = [
         title: "Video Production",
         image: "https://easycreativesolution.com/wp-content/uploads/2025/05/Video-production.jpg",
     },
+    {
+        title: "Graphic Design",
+        image: "https://i0.wp.com/websenor.com/wp-content/uploads/2021/10/websenor-banner-646.jpg?fit=1024%2C989&ssl=1",
+    },
+    {
+        title: "Motion Graphics",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaVuXVZOBMiXD3cVn2eiAJ3hQSYa0YO6_SDX-pNGkjIdNogjjEKMuW5cDWNhDdampK1_A&usqp=CAU",
+    },
     
 ];
 
@@ -20,16 +28,16 @@ const Services = () => {
         <section className=" text-white py-16 px-6">
 
 
-            <div className="my-10" data-aos="fade-right"
+            <div className="my-10" data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" 
 
             >
                 <p className='text-center text-xl font-semibold py-3'>Services</p>
                 <p className='text-center lg:text-5xl text-2xl text-white font-semibold'>What we provide</p>
 
             </div>
-            <div className="flex lg:flex-row flex-col lg:items-start items-center lg:gap-6 gap-3 justify-center my-20">
+            <div className="flex lg:flex-row flex-col-reverse lg:items-center items-center lg:gap-10 gap-3 justify-center my-20">
                 {/* Heading */}
-                <div className="mb-12 lg:text-left text-center">
+                <div className="mb-12 lg:text-left text-center lg:py-0 md:py-3 py-10">
                     <p className="text-sm text-gray-400 uppercase font-semibold">
                         What Can We Do
                     </p>
@@ -40,7 +48,7 @@ const Services = () => {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
@@ -49,7 +57,7 @@ const Services = () => {
                             <img
                                 src={service.image}
                                 alt={service.title}
-                                className="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
+                                className="w-full h-40 sm:h-48 object-cover transition duration-300 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="text-center">

@@ -4,6 +4,7 @@ import Project from '../Components/Project';
 import Services from '../Components/Services';
 import ClientReviews from '../Components/ClientReviews';
 import ClientsSection from '../Components/TopClient';
+import CTASection from '../Components/CTASection';
 
 const fetchVideo=fetch('/data.json').then(res=>res.json())
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Services></Services>
             <ClientReviews></ClientReviews>
             <ClientsSection></ClientsSection>
+            <CTASection></CTASection>
         </div>
     );
 };

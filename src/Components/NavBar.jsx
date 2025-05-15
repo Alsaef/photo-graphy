@@ -16,7 +16,7 @@ const NavBar = () => {
 
                         <div>
                             <a href="">
-                                <img src="https://easycreativesolution.com/wp-content/uploads/2025/05/ECS-LOGO.svg" alt="Logo" className="h-[50px] w-[50px]" />
+                                <img src={Logo} alt="Logo" className="w-[80px]" />
                             </a>
                         </div>
 

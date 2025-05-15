@@ -7,7 +7,7 @@ import bankAsiaLogo from '../assets/images/Nasdaily-e1746427716481.png';
 const ClientsSection = () => {
   return (
     <section className=" text-white py-16 px-5">
-      <div data-aos="fade-right" className="text-center mb-12">
+      <div data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000"  className="text-center mb-12">
         <h4 className="text-sm   py-4">Top Clients</h4>
         <h2 className="text-4xl font-bold">Our reputed partner</h2>
       </div>
