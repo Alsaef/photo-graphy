@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from '../Components/Hero';
 import Project from '../Components/Project';
+import Services from '../Components/Services';
+import ClientReviews from '../Components/ClientReviews';
 
 const fetchVideo=fetch('/data.json').then(res=>res.json())
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <Project fetchVideo={fetchVideo}></Project>
+            <Services></Services>
+            <ClientReviews></ClientReviews>
         </div>
     );
 };

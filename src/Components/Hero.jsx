@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Counter from './Counter';
 const Hero = () => {
     return (
-        <div>
+        <div> 
             <div className=" relative overflow-hidden">
                 <div
                     className="min-h-screen bg-fixed bg-cover bg-center flex flex-col items-center justify-center"

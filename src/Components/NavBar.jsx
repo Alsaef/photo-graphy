@@ -10,18 +10,18 @@ const NavBar = () => {
     const closeMenu = () => setIsMenuOpen(false);
     return (
         <div>
-            <header class="fixed w-full top-0 z-50 backdrop-blur-lg   uppercase">
-                <div class="container mx-auto px-4">
-                    <div class="flex items-center justify-between py-4">
+            <header className="fixed w-full top-0 z-50 backdrop-blur-lg   uppercase">
+                <div className="container mx-auto px-4">
+                    <div className="flex items-center justify-between py-4">
 
                         <div>
                             <a href="">
-                                <img src="https://easycreativesolution.com/wp-content/uploads/2025/05/ECS-LOGO.svg" alt="Logo" class="h-10 w-auto" />
+                                <img src="https://easycreativesolution.com/wp-content/uploads/2025/05/ECS-LOGO.svg" alt="Logo" className="h-10 w-auto" />
                             </a>
                         </div>
 
 
-                        <nav class="hidden md:flex flex-1/3 justify-center gap-6">
+                        <nav className="hidden md:flex flex-1/3 justify-center gap-6">
                             <NavLink to="/"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-blue-600  font-semibold-300" : "hover:text-blue-600 duration-300 text-white"

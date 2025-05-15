@@ -1,0 +1,68 @@
+import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+const services = [
+    {
+        title: "Video Editing",
+        image: "https://easycreativesolution.com/wp-content/uploads/2025/05/Video-editing.jpg", // Ensure this image is placed in your `public` folder
+    },
+    {
+        title: "Video Production",
+        image: "https://easycreativesolution.com/wp-content/uploads/2025/05/Video-production.jpg",
+    },
+    
+];
+
+ AOS.init();
+
+const Services = () => {
+    return (
+        <section className=" text-white py-16 px-6">
+
+
+            <div className="my-10" data-aos="fade-right"
+
+            >
+                <p className='text-center text-xl font-semibold py-3'>Services</p>
+                <p className='text-center lg:text-5xl text-2xl text-white font-semibold'>What we provide</p>
+
+            </div>
+            <div className="flex lg:flex-row flex-col lg:items-start items-center lg:gap-6 gap-3 justify-center my-20">
+                {/* Heading */}
+                <div className="mb-12 lg:text-left text-center">
+                    <p className="text-sm text-gray-400 uppercase font-semibold">
+                        What Can We Do
+                    </p>
+                    <h2 className="text-2xl md:text-4xl font-bold mt-2 leading-tight">
+                        Services we can <br /> help you with
+                    </h2>
+                    <p className="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo exercitationem <br /> dignissimos fuga mollitia praesentium deleniti excepturi ut veritatis itaque quae.</p>
+                </div>
+
+                {/* Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                    {services.map((service, index) => (
+                        <div
+                            key={index}
+                            className="relative rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl hover:shadow-blue-500"
+                        >
+                            <img
+                                src={service.image}
+                                alt={service.title}
+                                className="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-2 h-2 bg-blue-500 rounded-full mx-auto mb-2"></div>
+                                    <h3 className="text-xl font-semibold">{service.title}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Services;
