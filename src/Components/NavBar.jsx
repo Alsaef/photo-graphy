@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import Logo from '../assets/images/logo.png';
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -16,7 +16,7 @@ const NavBar = () => {
 
                         <div>
                             <a href="">
-                                <img src="https://easycreativesolution.com/wp-content/uploads/2025/05/ECS-LOGO.svg" alt="Logo" className="h-10 w-auto" />
+                                <img src="https://easycreativesolution.com/wp-content/uploads/2025/05/ECS-LOGO.svg" alt="Logo" className="h-[50px] w-[50px]" />
                             </a>
                         </div>
 

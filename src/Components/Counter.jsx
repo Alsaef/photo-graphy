@@ -3,7 +3,7 @@ import React from 'react';
 const Counter = () => {
     return (
         <div className=" text-white mt-[110px] py-8 flex lg:flex-row flex-col items-center gap-3.5 justify-around  text-center">
-            <h2 className="text-5xl font-semibold">Our Fun Fact</h2>
+            <h2 className="text-5xl font-semibold mb-6">Our Fun Fact</h2>
             <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
                 <div className="">
                     <h2 className="text-4xl font-semibold">500+</h2>
