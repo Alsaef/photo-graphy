@@ -60,7 +60,14 @@ const Project = ({ loacationPath }) => {
                 <button onClick={() => handelToggle('youtube video')} className={`${toggle === 'youtube video' ? 'bg-blue-500 text-white rounded-lg btn btn-lg' : 'bg-white text-black rounded-lg btn btn-lg hover:bg-blue-500 hover:text-white '}`}>Youtube Video</button>
                 <button onClick={() => handelToggle('promotional')} className={`${toggle === 'promotional' ? 'bg-blue-500 text-white rounded-lg btn btn-lg' : 'bg-white text-black rounded-lg btn btn-lg hover:bg-blue-500 hover:text-white'}`}>Promotional Video</button>
             </div>
-
+              
+              <div>
+                {
+                    loading&&<div className='flex flex-col items-center'> 
+                         <Loading></Loading>
+                    </div>
+                }
+              </div>
 
             <div
                 className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
