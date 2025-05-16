@@ -10,7 +10,7 @@ const Hero = () => {
                     className="min-h-screen bg-fixed bg-cover bg-center flex flex-col items-center justify-center"
                     style={{ backgroundImage: `url(${ImageBanner})` }}
                 >
-                    <div className="p-8 mt-[120px] ">
+                    <div className="p-8 lg:mt-[194px] mt-[120px] ">
                         <motion.div
                             initial={{ opacity: 0, x: -100 }}
                             animate={{ opacity: 1, x: 0 }}
