@@ -70,7 +70,7 @@ const Project = ({ loacationPath }) => {
               </div>
 
             <div
-                className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
+                className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-8'>
                 {!loading&&videos
                     ?.filter((video) => video.category === toggle)
                     .map((video, index) => (
