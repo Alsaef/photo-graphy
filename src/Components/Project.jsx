@@ -3,20 +3,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loading from './Loading';
 
-const Project = ({loacationPath}) => {
+const Project = ({ loacationPath }) => {
     const [toggle, setToggle] = useState('reels')
-   
+
 
     const [videos, setVideos] = useState([])
     const [loading, setLoading] = useState(true)
 
-const handelToggle = (toggleValue) => {
-    setToggle(toggleValue);
-    setLoading(true);
-    setTimeout(() => {
-        setLoading(false);
-    }, 500);
-}
+    const handelToggle = (toggleValue) => {
+        setToggle(toggleValue);
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 200);
+    }
 
     const fetchData = () => {
         fetch('/data.json')
@@ -30,12 +30,25 @@ const handelToggle = (toggleValue) => {
     useEffect(() => {
         fetchData()
     }, [])
-    AOS.init();
+
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false, // scroll korle bar bar animate hobe
+        });
+    }, []);
+
+    useEffect(() => {
+    if (!loading) {
+        AOS.refresh(); 
+    }
+}, [loading]);
     return (
         <div className='my-16 px-5'>
 
 
-            <div data-aos={loacationPath==='/portfolio'?'':'fade-right'} data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
+            <div data-aos={loacationPath === '/portfolio' ? '' : 'fade-right'} data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
 
             >
                 <p className='text-center text-xl font-semibold py-3'>Latest Projects</p>
@@ -48,19 +61,16 @@ const handelToggle = (toggleValue) => {
                 <button onClick={() => handelToggle('promotional')} className={`${toggle === 'promotional' ? 'bg-blue-500 text-white rounded-lg btn btn-lg' : 'bg-white text-black rounded-lg btn btn-lg hover:bg-blue-500 hover:text-white'}`}>Promotional Video</button>
             </div>
 
-              {
-                loading&&<>
-               <Loading></Loading>
-                </>
-              }
+
             <div
                 className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
-                { !loading&& videos
+                {!loading&&videos
                     ?.filter((video) => video.category === toggle)
                     .map((video, index) => (
                         <div
+                            data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
                             key={index}
-                            className={`mx-auto w-full aspect-video`}
+                            className="mx-auto w-full aspect-video"
                         >
                             <iframe
                                 className="w-full h-full rounded-xl"
@@ -72,6 +82,7 @@ const handelToggle = (toggleValue) => {
                             ></iframe>
                         </div>
                     ))}
+
             </div>
 
         </div>

@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BGhero from '../assets/images/hero_bg_4.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const PageHero = ({pageTitle,pageSubTitle}) => {
+      useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, 
+    });
+  }, []);
     return (
          <div className="overflow-hidden w-full">
                 <div

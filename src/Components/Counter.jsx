@@ -74,7 +74,7 @@ const Counter = () => {
           <span className="text-sm">Complete Projects</span>
         </div>
         <div>
-          <CountUpWithSuffix end={13} suffix="+" startCount={countStarted} />
+          <CountUpWithSuffix end={12} suffix="+" startCount={countStarted} />
           <span className="text-sm">Team Members</span>
         </div>
         <div>

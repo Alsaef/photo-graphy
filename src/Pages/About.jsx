@@ -4,7 +4,7 @@ import PageHero from '../Components/PageHero';
 const About = () => {
     return (
         <div>
-           
+           <PageHero pageTitle='About Us' pageSubTitle='About Us'></PageHero>
         </div>
     );
 };

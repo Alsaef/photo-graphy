@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Scroll = () => {
     const { pathname } = useLocation();
-
+   useEffect(() => {
+          AOS.refresh(); 
+  }, []);
     useEffect(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [pathname]);

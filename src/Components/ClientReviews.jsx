@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination ,Autoplay} from 'swiper/modules';
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const reviews = [
     {
         name: 'John Doe',
@@ -31,8 +32,15 @@ const reviews = [
 // dev
 
 const ClientReviews = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+    }, [AOS]);
     return (
-        <section className="bg-black py-16 my-10 px-4 md:px-20 relative">
+        <section className="bg-black py-16 my-12 px-4 md:px-20 relative">
             <div className='absolute -top-8 right-0 animate-[bounce_3s_linear_infinite]'>
                 <svg width="172" height="120" viewBox="0 0 162 181" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M156.833 178.434C156.833 177.053 157.954 175.932 159.335 175.932C160.716 175.932 161.837 177.053 161.837 178.434C161.837 179.814 160.716 180.935 159.335 180.935C157.954 180.935 156.833 179.814 156.833 178.434Z" fill="#1E90FF"></path>
@@ -67,7 +75,7 @@ const ClientReviews = () => {
                     <path d="M0.102661 3.36198C0.102661 1.98123 1.22354 0.860352 2.60429 0.860352C3.98504 0.860352 5.10591 1.98123 5.10591 3.36198C5.10591 4.74273 3.98504 5.8636 2.60429 5.8636C1.22091 5.8636 0.102661 4.74273 0.102661 3.36198Z" fill="#1E90FF"></path>
                 </svg>
             </div>
-            <div className="text-center mb-12" data-aos-delay="10" data-aos-duration="1000"  data-aos="fade-right">
+            <div className="text-center mb-12" data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false" >
                 <p className="text-sm   py-4">Client Testimonials</p>
                 <h2 className="text-4xl font-bold ">What Our Clients Say</h2>
             </div>
@@ -78,7 +86,11 @@ const ClientReviews = () => {
                 loop={true}
                 pagination={{ clickable: true }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
+                autoplay={{
+                    delay: 6000,
+                    disableOnInteraction: false,
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="max-w-3xl mx-auto"
             >
                 {reviews.map((client, index) => (

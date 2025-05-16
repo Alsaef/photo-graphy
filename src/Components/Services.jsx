@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const services = [
@@ -21,14 +21,20 @@ const services = [
     
 ];
 
- AOS.init();
 
 const Services = () => {
+      useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, 
+    });
+  }, []);
+
     return (
         <section className=" text-white py-16 px-6">
 
 
-            <div className="my-10" data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" 
+            <div className="my-10" data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
 
             >
                 <p className='text-center text-xl font-semibold py-3'>Services</p>

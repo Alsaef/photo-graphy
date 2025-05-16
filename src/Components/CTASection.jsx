@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const CTASection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, 
+    });
+  }, []);
   return (
-    <section data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"  className=" text-white py-24 px-5 md:px-0 relative text-center">
+    <section data-aos="fade-up" data-aos-delay="40" data-aos-duration="1000" data-aos-once="false"  className=" text-white mt-12 py-24 px-5 md:px-0 relative text-center">
       {/* Left blue triangle */}
       <div className="absolute left-4 top-1/2 transform -translate-y-1/2 animate-[spin_3s_linear_infinite]">
         <div className="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-r-[15px] border-r-blue-500" />
