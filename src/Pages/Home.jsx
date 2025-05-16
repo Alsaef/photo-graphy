@@ -6,12 +6,12 @@ import ClientReviews from '../Components/ClientReviews';
 import ClientsSection from '../Components/TopClient';
 import CTASection from '../Components/CTASection';
 
-const fetchVideo=fetch('/data.json').then(res=>res.json())
+
 const Home = () => {
     return (
         <div>
             <Hero></Hero>
-            <Project fetchVideo={fetchVideo}></Project>
+            <Project></Project>
             <Services></Services>
             <ClientReviews></ClientReviews>
             <ClientsSection></ClientsSection>

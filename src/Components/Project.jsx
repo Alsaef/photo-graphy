@@ -1,21 +1,35 @@
-import React, { use, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Project = ({ fetchVideo }) => {
+const Project = ({loacationPath}) => {
     const [toggle, setToggle] = useState('reels')
     const handelToggle = (toggleValue) => {
         setToggle(toggleValue)
     }
 
-    const videos = use(fetchVideo)
+    const [videos, setVideos] = useState([])
 
+
+
+    const fetchData = () => {
+        fetch('/data.json')
+            .then(res => res.json())
+            .then(data => {
+                setVideos(data)
+                setLoading(false)
+            })
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [])
     AOS.init();
     return (
-        <div className='my-20 px-5'>
+        <div className='my-10 px-5'>
 
 
-            <div data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
+            <div data-aos={loacationPath==='/portfolio'?'':'fade-right'} data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
 
             >
                 <p className='text-center text-xl font-semibold py-3'>Latest Projects</p>
@@ -30,11 +44,11 @@ const Project = ({ fetchVideo }) => {
 
 
             <div
-                 className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
+                className='grid lg:grid-cols-2 grid-cols-1 gap-4 mx-auto w-[80%] my-10'>
                 {videos
                     ?.filter((video) => video.category === toggle)
                     .map((video, index) => (
-                        <div 
+                        <div
                             key={index}
                             className={`mx-auto w-full aspect-video`}
                         >
