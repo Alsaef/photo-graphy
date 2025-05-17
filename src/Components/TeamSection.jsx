@@ -13,18 +13,18 @@ export default function TeamSection() {
 
 
 
-    //     useEffect(() => {
-    //   AOS.init({
-    //     duration: 1000,
-    //     once: false, 
-    //   });
-    // }, []);
+  //     useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: false, 
+  //   });
+  // }, []);
 
 
   return (
     <section className=" text-white py-16 px-4 lg:my-14 my-5">
       <h2 className="text-4xl font-bold text-center mb-12">Our Creative Team</h2>
-      <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {team.map((member, index) => (
           <div key={index} className="shadow-2xl rounded-2xl p-4 text-center">
             <img
@@ -34,7 +34,13 @@ export default function TeamSection() {
             />
             <h3 className="text-xl font-semibold">{member.name}</h3>
             <p className="text-sm text-gray-200 mb-1">{member.title}</p>
-            {member.phone && <p className="text-sm text-gray-400">📞 <a href={`tel:${member.phone}`}> {member.phone}</a></p>}
+            {member.phone && <p className="text-sm text-gray-400">📞  <a
+              href={`https://wa.me/${member.phone}?text=${encodeURIComponent("I'd like to chat with you")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {member.phone}
+            </a></p>}
             {member.email && <p className="text-sm text-gray-400">✉️<a href={`mailto:${member.email}`}> {member.email}</a></p>}
 
             {/* Social Media */}
@@ -73,15 +79,15 @@ export default function TeamSection() {
 }
 
 
- /* 
+/*
  
- <a
-  href={`https://wa.me/${member.phone}?text=${encodeURIComponent("I'd like to chat with you")}`}
-  target="_blank"
-  rel="noopener noreferrer"
+<a
+ href={`https://wa.me/${member.phone}?text=${encodeURIComponent("I'd like to chat with you")}`}
+ target="_blank"
+ rel="noopener noreferrer"
 >
-  {member.phone}
+ {member.phone}
 </a>
 
  
- */
+*/

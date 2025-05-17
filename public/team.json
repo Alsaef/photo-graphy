@@ -1,41 +1,10 @@
 [
-  {
-    "name": "Md Mishuk Ali",
-    "title": "Editor",
-    "phone": "01303130434",
-    "email": "mishupk4@gmail.com",
-    "facebook": "https://facebook.com/misuktoma.talora.3",
-    "instagram": "https://instagram.com/md_mishuk_ali",
-    "linkedin": "https://linkedin.com/in/md-mishuk-ali-2a3912253",
-    "youtube": "https://youtube.com/@MISHUK29",
-    "twitter": "https://twitter.com/mdmishukali",
-    "image": "https://i.ibb.co/236N0xNr/6107107581681059428.jpg"
-  },
-  {
-    "name": "Md Ilius Hossain",
-    "title": "Editor",
-    "phone": "01602001861",
-    "facebook": "https://facebook.com/mdiliushossainn",
-    "instagram": "https://instagram.com/md.iliushossain",
-    "linkedin": "https://linkedin.com/in/md-ilius-hossain-373419363",
-    "youtube": "https://youtube.com/@SagorEdittz",
-    "twitter": "https://twitter.com/mdiliushossain",
-    "image": "https://i.ibb.co/wZDJZhbc/IMG-20250513-211605-025.jpg"
-  },
-  {
-    "name": "Md. Mahadhe Hassan Sumon",
-    "title": "Editor",
-    "phone": "01911167217",
-    "email": "mahadhehassan708@gmai.com",
-    "facebook": "https://facebook.com/mahadhehassansumon1",
-    "instagram": "https://instagram.com/mahadhehassansumon",
-    "linkedin": "https://linkedin.com/in/mahadhe-hassan-sumon",
-    "youtube": "https://youtube.com/@mahadhehassaneditor",
-    "image": "https://i.ibb.co/dJWm0WYj/1746938086682.png"
-  },
+
+
+  
   {
     "name": "Maidul Hasan",
-    "title": "Editor",
+    "title": "Video Editor",
     "phone": "+8801712295888",
     "email": "engr.maidulhasan@gmail.com",
     "facebook": "https://www.facebook.com/maidul.hasan?rdid=PTHud7zXZfEMItjy&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BxPjcJF1b%2F#",
@@ -44,6 +13,47 @@
     "youtube": "https://youtube.com/@MaidulEditzz",
     "twitter": "https://x.com/MaidulHasan19",
     "image": "https://i.ibb.co/Lzg6vnKf/Black-and-White-Simple-man-Modeling-Facebook-Profile-Picture-5.png"
+  },
+
+    {
+    "name": "Md Ilius Hossain",
+    "title": "Video Editor",
+    "phone": "+8801602001861",
+      "email": "mdiliushossain771@gmail.com",
+    "facebook": "https://facebook.com/mdiliushossainn",
+    "instagram": "https://instagram.com/md.iliushossain",
+    "linkedin": "https://linkedin.com/in/md-ilius-hossain-373419363",
+    "youtube": "https://youtube.com/@SagorEdittz",
+    "twitter": "https://twitter.com/mdiliushossain",
+    "image": "https://i.ibb.co/wZDJZhbc/IMG-20250513-211605-025.jpg"
+  },
+
+
+  {
+    "name": "Md Mishuk Ali",
+    "title": "Video Editor",
+    "phone": "+8801303130434",
+    "email": "mishupk4@gmail.com",
+    "facebook": "https://facebook.com/misuktoma.talora.3",
+    "instagram": "https://instagram.com/md_mishuk_ali",
+    "linkedin": "https://linkedin.com/in/md-mishuk-ali-2a3912253",
+    "youtube": "https://youtube.com/@MISHUK29",
+    "twitter": "https://twitter.com/mdmishukali",
+    "image": "https://i.ibb.co/236N0xNr/6107107581681059428.jpg"
+  },
+
+
+    {
+    "name": "Md. Mahadhe Hassan",
+    "title": "Video Editor",
+    "phone": "+8801911167217",
+    "email": "mahadhehassan708@gmai.com",
+    "facebook": "https://facebook.com/mahadhehassansumon1",
+    "instagram": "https://instagram.com/mahadhehassansumon",
+    "linkedin": "https://linkedin.com/in/mahadhe-hassan-sumon",
+    "youtube": "https://youtube.com/@mahadhehassaneditor",
+    "image": "https://i.ibb.co/dJWm0WYj/1746938086682.png",
+      "twitter": "https://twitter.com/Mahadhehassan2"
   }
 ]
 

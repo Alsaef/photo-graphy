@@ -87,7 +87,7 @@ const ClientReviews = () => {
                 pagination={{ clickable: true }}
                 navigation={true}
                 autoplay={{
-                    delay: 6000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay, Pagination, Navigation]}
