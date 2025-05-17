@@ -42,7 +42,7 @@ const Footer = () => {
           <h2 className="text-white text-xl font-bold mb-4">Contact Us</h2>
           <p className="mb-2">Mirpur 10, Dhaka, Bangladesh</p>
           <p className="mb-2">+88 01618687117</p>
-          <p>contact@easycreativesolution.com</p>
+          <p><a href="mailto:3mistudio22@gmail.com">3mistudio22@gmail.com</a></p>
         </div>
       </div>
     </footer>

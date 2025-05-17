@@ -31,7 +31,7 @@ const Services = () => {
   }, []);
 
     return (
-        <section className=" text-white py-16 px-6">
+        <section className=" text-white lg:py-16 py-7 px-6">
 
 
             <div className="my-10" data-aos="fade-right" data-aos-delay="10" data-aos-duration="1000" data-aos-once="false"
