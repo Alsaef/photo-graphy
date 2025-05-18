@@ -29,7 +29,7 @@ const ContactForm = () => {
         </h1>
         <div className="flex items-center gap-3 mb-4">
           <FaPhoneAlt className="text-blue-500" />
-          <p>+88 01618687117</p>
+          <p>+8801911167217</p>
         </div>
         <div className="flex items-center gap-3 mb-4">
           <FaEnvelope className="text-blue-500" />
