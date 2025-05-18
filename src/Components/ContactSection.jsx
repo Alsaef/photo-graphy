@@ -37,7 +37,7 @@ const ContactForm = () => {
         </div>
         <div className="flex items-center gap-3">
           <FaMapMarkerAlt className="text-blue-500" />
-          <p>Mirpur 10, Dhaka, Bangladesh</p>
+          <p>Zinzira Keraniganj Dhaka, Bangladesh</p>
         </div>
       </div>
 

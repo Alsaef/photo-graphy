@@ -31,7 +31,7 @@ export default function TeamSection() {
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-72 object-cover rounded-xl mb-4 bg-[#015196]"
+              className="w-full h-72 object-cover rounded-xl mb-4 bg-[#015196] hover:scale-105 duration-500"
             />
             <h3 className="text-xl font-semibold">{member.name}</h3>
             <p className="text-sm text-gray-200 mb-1">{member.title}</p>

@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -13,6 +13,9 @@ const Footer = () => {
           <div className="flex gap-4">
             <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaFacebookF className="text-white" />
+            </a>
+            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
+              <FaLinkedin className="text-white" />
             </a>
             <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaTwitter className="text-white" />
@@ -40,8 +43,8 @@ const Footer = () => {
         {/* Right Column */}
         <div>
           <h2 className="text-white text-xl font-bold mb-4">Contact Us</h2>
-          <p className="mb-2">Mirpur 10, Dhaka, Bangladesh</p>
-          <p className="mb-2">+88 01618687117</p>
+          <p className="mb-2">Zinzira Keraniganj Dhaka, Bangladesh</p>
+          <p className="mb-2">+8801911167217</p>
           <p><a href="mailto:3mistudio22@gmail.com">3mistudio22@gmail.com</a></p>
         </div>
       </div>
