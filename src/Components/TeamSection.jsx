@@ -13,12 +13,13 @@ export default function TeamSection() {
 
 
 
-  //     useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: false, 
-  //   });
-  // }, []);
+  const handleWhatsApp = (number) => {
+    const phone = number.replace('+', '');
+    const message = encodeURIComponent("Hi! I want to connect with you.");
+    const url = `https://wa.me/${phone}?text=${message}`;
+    window.open(url, '_blank');
+  };
+
 
 
   return (
@@ -34,13 +35,18 @@ export default function TeamSection() {
             />
             <h3 className="text-xl font-semibold">{member.name}</h3>
             <p className="text-sm text-gray-200 mb-1">{member.title}</p>
-            {member.phone && <p className="text-sm text-gray-400">📞  <a
-              href={`https://wa.me/${member.phone}?text=${encodeURIComponent("I'd like to chat with you")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {member.phone}
-            </a></p>}
+            {member.phone && <p className="text-sm text-gray-400">📞
+
+
+              <a
+                href={`https://wa.me/${member.phone.replace('+', '')}?text=${encodeURIComponent("Hi! I want to connect with you.")}`}
+                target="_blank"
+               
+              >
+                {member.phone}
+              </a>
+
+            </p>}
             {member.email && <p className="text-sm text-gray-400">✉️<a href={`mailto:${member.email}`}> {member.email}</a></p>}
 
             {/* Social Media */}
