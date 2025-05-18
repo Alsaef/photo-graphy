@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loading from './Loading';
+import Ifram from './Ifram';
 
 const Project = ({ loacationPath }) => {
     const [toggle, setToggle] = useState('reels')
@@ -9,7 +10,7 @@ const Project = ({ loacationPath }) => {
 
     const [videos, setVideos] = useState([])
     const [loading, setLoading] = useState(true)
-
+  
     const handelToggle = (toggleValue) => {
         setToggle(toggleValue);
         setLoading(true);
@@ -44,6 +45,16 @@ const Project = ({ loacationPath }) => {
         AOS.refresh(); 
     }
 }, [loading]);
+
+
+
+
+
+
+
+
+
+
     return (
         <div className='my-16 px-5'>
 
@@ -74,20 +85,7 @@ const Project = ({ loacationPath }) => {
                 {!loading&&videos
                     ?.filter((video) => video.category === toggle)
                     .map((video, index) => (
-                        <div
-                            data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
-                            key={index}
-                            className="mx-auto w-full aspect-video"
-                        >
-                            <iframe
-                                className="w-full h-full rounded-xl"
-                                src={video.embedUrl}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
+                    <Ifram video={video} index={index}></Ifram>
                     ))}
 
             </div>
