@@ -20,10 +20,13 @@ const ClientsSection = () => {
         <h2 className="text-4xl font-bold">Our reputed partner</h2>
       </div>
       <div className="flex lg:flex-row flex-col justify-center items-center gap-10 my-16">
-        <img src={nestleLogo} alt="Nestlé" className="h-[60px]" />
-        <img src={tenMinuteSchoolLogo} alt="10 Minute School" className="h-[60px]" />
-        <img src={nasdailyLogo} alt="Nas Daily" className="h-[60px]" />
-        <img src={bankAsiaLogo} alt="Bank Asia" className="h-[60px]" />
+         
+        <h2 className='text-3xl font-semibold text-blue-500'>Digital DroopOuts</h2>
+    
+        <h2 className='text-3xl font-semibold text-blue-500'>Outsourcing BD Institute</h2>
+    
+        <h2 className='text-3xl font-semibold text-blue-500'>GM Studio</h2>
+    
       </div>
     </section>
   );
