@@ -29,15 +29,15 @@ const ContactForm = () => {
         </h1>
         <div className="flex items-center gap-3 mb-4">
           <FaPhoneAlt className="text-blue-500" />
-          <p>+8801911167217</p>
+          <p><a target='_blank' href="https://wa.me/8801911167217?text=Hi! I want to connect with you.">+8801911167217</a></p>
         </div>
         <div className="flex items-center gap-3 mb-4">
           <FaEnvelope className="text-blue-500" />
-          <p>3mistudio22@gmail.com</p>
+          <p><a href="https://mail.google.com/mail/?view=cm&to=3mistudio22@gmail.com"  target="_blank">3mistudio22@gmail.com</a></p>
         </div>
         <div className="flex items-center gap-3">
           <FaMapMarkerAlt className="text-blue-500" />
-          <p>Zinzira Keraniganj Dhaka, Bangladesh</p>
+          <p><a target="_blank" href="https://www.google.com/maps?ll=23.706707,90.395523&z=16&t=h&hl=en&gl=BD&mapclient=embed&q=Zinzira+Keraniganj">Zinzira Keraniganj Dhaka, Bangladesh</a></p>
         </div>
       </div>
 

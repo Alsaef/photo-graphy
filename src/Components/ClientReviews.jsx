@@ -9,24 +9,27 @@ import '@smastrom/react-rating/style.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 const reviews = [
-    {
-        name: 'John Doe',
-        image: 'https://i.pravatar.cc/150?img=3',
-        review: 'They did an excellent job! Highly recommended for any branding and video editing needs.',
-        rating: 5,
-    },
-    {
-        name: 'Jane Smith',
-        image: 'https://i.pravatar.cc/150?img=5',
-        review: 'Very professional and fast. Loved the social ad campaign!',
-        rating: 4,
-    },
-    {
-        name: 'Emily Wilson',
-        image: 'https://i.pravatar.cc/150?img=10',
-        review: 'Delivered as promised. The website they built exceeded our expectations.',
-        rating: 5,
-    },
+  {
+    name: 'John Doe',
+    image: 'https://randomuser.me/api/portraits/men/32.jpg',
+    review:
+      'Partnering with 3 Mi Studio was a game changer for our brand. Their creative approach to video editing and branding gave us a distinct edge in the market.',
+    rating: 5,
+  },
+  {
+    name: 'Jane Smith',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg',
+    review:
+      'The team at 3 Mi Studio was incredibly professional and efficient. They crafted a compelling ad campaign that significantly boosted our engagement.',
+    rating: 4,
+  },
+  {
+    name: 'Emily Wilson',
+    image: 'https://randomuser.me/api/portraits/women/68.jpg',
+    review:
+      '3 Mi Studio delivered a sleek, modern website that exceeded our expectations. Their ability to combine design and functionality is unmatched.',
+    rating: 5,
+  },
 ];
 
 // dev
