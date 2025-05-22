@@ -6,7 +6,7 @@ export default function TeamSection() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/teams")
+    fetch("https://server-3mi-studio.vercel.app/api/v1/teams")
       .then((res) => res.json())
       .then((data) => setTeam(data));
   }, []);
