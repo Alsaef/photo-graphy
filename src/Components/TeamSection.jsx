@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTwitter, FaArrowAltCircleRight } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 export default function TeamSection() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    fetch("/team.json")
+    fetch("http://localhost:3000/api/v1/teams")
       .then((res) => res.json())
       .then((data) => setTeam(data));
   }, []);
@@ -31,7 +31,7 @@ export default function TeamSection() {
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-72 object-cover rounded-xl mb-4 bg-[#015196] backdrop-blur-lg hover:scale-105 duration-500"
+              className="w-full h-72 object-cover rounded-xl mb-4 bg-black backdrop-blur-lg hover:scale-105 duration-500"
             />
             <h3 className="text-xl font-semibold">{member.name}</h3>
             <p className="text-sm text-gray-200 mb-1">{member.title}</p>
@@ -41,7 +41,7 @@ export default function TeamSection() {
               <a
                 href={`https://wa.me/${member.phone.replace('+', '')}?text=${encodeURIComponent("Hi! I want to connect with you.")}`}
                 target="_blank"
-               
+
               >
                 {member.phone}
               </a>
@@ -74,6 +74,24 @@ export default function TeamSection() {
               {member.twitter && (
                 <a href={member.twitter} target="_blank" rel="noreferrer">
                   <FaTwitter className="hover:text-sky-400" />
+                </a>
+              )}
+              {member.fiverr && (
+                <a href={member.fiverr} target="_blank" rel="noreferrer">
+                  <svg
+    className="text-white hover:text-green-400 transition-colors duration-200"
+    xmlns="http://www.w3.org/2000/svg"
+    width="20px"
+    height="20px"
+    viewBox="-2.5 -2 24 24"
+    preserveAspectRatio="xMinYMin"
+    fill="currentColor"
+  >
+    <path d="M16.25 16.25v-10h-10v-.625c0-1.034.841-1.875 1.875-1.875H10V0H8.125A5.632 5.632 0 0 0 2.5 5.625v.625H0V10h2.5v6.25H0V20h8.75v-3.75h-2.5V10h6.285v6.25H10V20h8.75v-3.75h-2.5z"/>
+    <circle cx="14.375" cy="1.875" r="1.875"/>
+  </svg>
+
+
                 </a>
               )}
             </div>

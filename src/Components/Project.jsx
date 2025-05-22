@@ -20,7 +20,7 @@ const Project = ({ loacationPath }) => {
     }
 
     const fetchData = () => {
-        fetch('/data.json')
+        fetch('http://localhost:3000/api/v1/videos')
             .then(res => res.json())
             .then(data => {
                 setVideos(data)
