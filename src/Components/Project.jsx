@@ -20,7 +20,7 @@ const Project = ({ loacationPath }) => {
     }
 
     const fetchData = () => {
-        fetch('hhttps://server-3mi-studio.vercel.app/api/v1/videos')
+        fetch('https://server-3mi-studio.vercel.app/api/v1/videos')
             .then(res => res.json())
             .then(data => {
                 setVideos(data)
