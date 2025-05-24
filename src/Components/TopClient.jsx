@@ -21,7 +21,7 @@ const ClientsSection = () => {
       </div>
       <div className="flex lg:flex-row flex-col justify-center items-center gap-10 my-16">
          
-        <i className='text-3xl font-semibold text-blue-500 '>Digital DroopOuts</i>
+        <i className='text-3xl font-semibold text-blue-500 '>Digital Droopouts</i>
     
         <em className='text-3xl font-semibold text-blue-500'>Outsourcing BD Institute</em>
     
