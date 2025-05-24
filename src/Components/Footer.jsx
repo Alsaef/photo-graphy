@@ -11,19 +11,19 @@ const Footer = () => {
           <h2 className="text-white text-xl font-bold mb-4">3Mi Studio</h2>
           <p className="mb-6">Your Go-To Video Editing &amp; IT Solution Agency</p>
           <div className="flex gap-4">
-            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
+            <a href="https://www.facebook.com/profile.php?id=61576587333723" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaFacebookF className="text-white" />
             </a>
-            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
+            <a href="https://www.linkedin.com/in/3mi-studio-b188a8367/" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaLinkedin className="text-white" />
             </a>
             <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaTwitter className="text-white" />
             </a>
-            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
+            <a href="https://www.instagram.com/3mistudio/" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaInstagram className="text-white" />
             </a>
-            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
+            <a href="https://www.youtube.com/@3MiStudio-e7t5g" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaYoutube className="text-white" />
             </a>
           </div>
