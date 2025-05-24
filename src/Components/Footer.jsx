@@ -17,9 +17,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/3mi-studio-b188a8367/" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaLinkedin className="text-white" />
             </a>
-            <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
-              <FaTwitter className="text-white" />
-            </a>
             <a href="https://www.instagram.com/3mistudio/" className="bg-gray-800 p-3 rounded-full hover:bg-gray-600">
               <FaInstagram className="text-white" />
             </a>
