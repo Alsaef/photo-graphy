@@ -29,7 +29,7 @@ const ContactForm = () => {
         </h1>
         <div className="flex items-center gap-3 mb-4">
           <FaPhoneAlt className="text-blue-500" />
-          <p><a target='_blank' href="https://wa.me/8801911167217?text=Hi! I want to connect with you.">+8801911167217</a></p>
+          <p><a target='_blank' href="https://wa.me/8801670692979?text=Hi! I want to connect with you.">+8801670692979</a></p>
         </div>
         <div className="flex items-center gap-3 mb-4">
           <FaEnvelope className="text-blue-500" />

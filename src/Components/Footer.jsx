@@ -44,7 +44,7 @@ const Footer = () => {
         <div>
           <h2 className="text-white text-xl font-bold mb-4">Contact Us</h2>
           <p className="mb-2"><a target="_blank" href="https://www.google.com/maps?ll=23.706707,90.395523&z=16&t=h&hl=en&gl=BD&mapclient=embed&q=Zinzira+Keraniganj">Zinzira Keraniganj Dhaka, Bangladesh</a></p>
-          <p className="mb-2"><a target='_blank' href="https://wa.me/8801911167217?text=Hi! I want to connect with you.">+8801911167217</a></p>
+          <p className="mb-2"><a target='_blank' href="https://wa.me/8801670692979?text=Hi! I want to connect with you.">+8801670692979</a></p>
           <a href="https://mail.google.com/mail/?view=cm&to=3mistudio22@gmail.com" target="_blank">
              3mistudio22@gmail.com
           </a>
